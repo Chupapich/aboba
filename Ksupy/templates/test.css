@@ -1,0 +1,28 @@
+.sakura-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sakura {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ff87a0;
+  border-radius: 50%;
+  animation: sakuraFall 4s linear infinite;
+}
+
+@keyframes sakuraFall {
+  0% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(200px, 400px) rotate(720deg);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="{% static  'css/main.css' %}">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #start {
+        background:url("{% static 'img/bg-start.jpg' %}");
+        }
+
+     </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header class="neoh_fn_header">
+                <div class="container">
+                    <div class="header_in">
+                        <div class="logo">
+                            <a href={% url 'home' %}><img src="{% static 'img/logo.png' %}" width="64px" height="64px" title="icon by Icons8 https://icons8.com "></a>
+                            <a href={% url 'stih' %}>Stih</a>
+                        </div>
+
+                        <div class="trigger">
+                            <div class="trigger_in">
+                                <span class="textheader">Меню</span>
+                                <span class="hamb">
+                                    <span class="hamb_a"></span>
+                                    <span class="hamb_b"></span>
+                                    <span class="hamb_c"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </header>
+        <!--Header-->
+        <div class="content">
+             <!--Секция с Сакурой-->
+               <div id="start" class="startsakura">
+
+                        <!-- Overlay (of hero header) -->
+                        <div class="bg_overlay">
+
+                            <!-- Overlay Color -->
+                            <div class="bg_color"></div>
+                            <!-- !Overlay Color -->
+
+                            <!-- Overlay Image -->
+                            <div class="bg_image"></div>
+                            <!-- !Overlay Image -->
+
+                        </div>
+                        <!-- Overlay (of hero header) -->
+
+                            <div class="container">
+                                <div class="contentsakura">
+                                    <h2><img src="{% static 'img/fox.png' %}" title=" иконки от mikan933 - Flaticon" > Ксюша <img src="{% static 'img/fox.png' %}"  class="fn__png--flipped" title=" иконки от mikan933 - Flaticon" >
+                                    </h2>
+                                    <p class="fn_desc fn_animated_text">
+                                        Меня зовут Ксения и это мой блог
+                                    </p>
+                                </div>
+
+                            </div>
+               </div>
+               <!--Секция с Сакурой-->
+               <!--Секция с Кошкой-->
+               <div id="cat" class="animationcat">
+                   <div class="foregroundcat">
+                        <div class="conteinercat">
+                          <span  class="textksucat1">Я подобна кошке</span>
+                          <span  class="textksucat2" >люблю свободу...</span>
+                        </div>
+                   </div>
+                   <div class="midgroundcat">
+                        <div class="tuna"></div>
+                   </div>
+                   <div class="backgroundcat">
+
+                   </div>
+               </div>
+               <!--Секция с Кошкой-->
+        </div>
+        <!--Секция с footer-->
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="#start"><img src="{% static 'img/logo.png' %}" width="32px" height="32px" title="icon by Icons8 https://icons8.com "></a>
+              <span class="mb-3 mb-md-0 text-muted">Created by BurI0k</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <span>Мои соц сети:</span>
+              <li class="ms-3"><a class="text-muted" href="https://vk.com/id447856506"><img src="{% static 'img/vk.png' %}" title="icon by Icons8"></a></li>
+              <li class="ms-3"><a class="text-muted" href="https://instagram.com/ksenos1907?igshid=MzRlODBiNWFlZA=="><img src="{% static 'img/inst.png' %}" title="icon by Icons8" width="30px" height="30px"></a></li>
+              <li class="ms-3"><a class="text-muted" href="https://t.me/Black_Cherry_Ksu"><img src="{% static 'img/telegram.png' %}" title="icon by Icons8" width="26px" height="26px"></a></li>
+            </ul>
+          </footer>
+        </div>
+        <!--Секция с footer-->
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="{% static  'js/cat.js' %}" ></script>
+</html>
